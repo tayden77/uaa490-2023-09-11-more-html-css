@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Beers</title>
+    <style>
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      thead th {
+        color: white;
+        background-color: rgb(89, 89, 232);
+      }
+      th {
+        border: 1px solid black;
+        padding: 10px 10px 15px 10px;}
+      td {
+        border: 1px dashed red;
+        padding: 10px;
+      }
+      tbody th {
+        background-color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #eeeeee;
+      }
+      tr:hover {
+        background-color: #bbbbbb;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color:darkcyan">
+      These are <em style="background-color:beige">some</em> of my favorite beers</h1>
+    <table>
+      <caption style="caption-side:bottom">
+        <p>Beers from local Anchorage breweries</p>
+      </caption>
+      <tfoot>
+        <tr>
+          <th colspan="2">Average</th>
+          <th>5.9%</th>
+          <th>54</th>
+        </tr>
+      </tfoot>
+      <thead>
+        <tr>
+          <th colspan="2">Beer</th>
+          <th>Alcohol</th>
+          <th>IBU</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="3">Matanuska<div><img src="denali"></div></th>
+          <td>Snow Bike</td>
+          <td>4.7% </td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Long Track</td>
+          <td>6.7% </td>
+          <td>55</td></tr>
+        <tr>
+          <td>Glacier IPA</td>
+          <td>6.3%</td>
+          <td>55</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Denali</th>
+          <td>The Big DIPA</td>
+          <td>8.5% </td>
+          <td>30</td></tr>
+        <tr>
+          <td>Twister Creek</td>
+          <td>6.7% </td>
+          <td>71</td></tr>
+        <tr>
+          <th rowspan="2">Forty-Ninth State</th>
+          <td>Solstice IPA</td>
+          <td>6.8% </td>
+          <td>68</td></tr>
+        <tr>
+          <td>Smok</td>
+          <td>5.7% </td>
+          <td>23</td></tr>
+      </tbody>
+    </table>
+  </body>
+</html>
