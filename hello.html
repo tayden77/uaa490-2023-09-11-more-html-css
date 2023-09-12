@@ -2,9 +2,66 @@
 <html lang="en">
     <head>
         <title>My Web Page!</title>
+        <meta name="viewport" content=""width=device-width>
+        <style>
+            .first {
+                font-size: 120%;
+                font-weight: bold;
+            }
+
+            p:first-child {
+                color: purple;
+                font-size: 150%;
+            }
+            
+            li:last-child {
+                border: 2px solid orange
+            }
+
+            li:nth-child(n + 3) {
+                background-color: yellow;
+            }
+
+            li:hover {
+                background-color: lightyellow;
+                color: blue;
+            }
+
+            .btn {
+                width: 100px;
+                background-color: gold;
+                border: 2px solid firebrick;
+                height: 30px;
+                border-radius: 10px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .btn:hover {
+                background-color: bisque;
+            }
+
+            .btn:active {
+                box-shadow: 2px 2px 5px black;
+                color: white;
+            }
+
+        </style>    
     </head>
     <body>
-        <h1>Welcome to My Web Page!</h1>
-        <p>This is a paragraph of text.</p>
+        <h1>Attribute presence and value selectors</h1>
+        <ul>
+            <li>Bill Russell</li>
+            <li>Sam Jones</li>
+            <li>Tom Heinsohn</li>
+            <li>K. C. Jones</li>
+            <li>Satch Sanders</li>
+            <li>John Havlicek</li>
+            <li>Jim Loscutoff</li>
+            <li>Frank Ramsey</li>
+            <li>Robert Horry</li>
+        </ul>
+        <button class="btn">Confirm</button>
+        <button class="btn">Deny</button>
     </body>
 </html>
