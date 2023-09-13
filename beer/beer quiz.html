@@ -9,7 +9,7 @@
         border: 1px solid black;
         border-collapse: collapse;
       }
-      thead th {
+      thead th, tfoot th {
         color: white;
         background-color: rgb(89, 89, 232);
       }
@@ -28,6 +28,12 @@
       }
       tr:hover {
         background-color: #bbbbbb;
+      }
+      .center-img {
+        text-align: center;
+      }
+      .center-img img {
+        display: inline-block;
       }
     </style>
   </head>
@@ -48,6 +54,10 @@
       <thead>
         <tr>
           <th colspan="2">Beer</th>
+          <th colspan="2">Stats</th>
+        </tr>
+        <tr>
+          <th colspan="2">Beer</th>
           <th>Alcohol</th>
           <th>IBU</td>
         </tr>
@@ -55,7 +65,7 @@
       <tbody>
         <tr>
           <th rowspan="3">Matanuska
-            <img src="foobar.png">
+            <div><img src="/beer/matanuska.png"></div>
           </th>
           <td>Snow Bike</td>
           <td>4.7% </td>
@@ -72,7 +82,7 @@
         </tr>
         <tr>
           <th rowspan="2">Denali
-            <img src="foobar.png">
+            <div><img src="/beer/denali.png"></div>
           </th>
           <td>The Big DIPA</td>
           <td>8.5% </td>
@@ -83,7 +93,7 @@
           <td>71</td></tr>
         <tr>
           <th rowspan="2">Forty-Ninth State
-            <img src="foobar.png">
+            <div><img src="/beer/fortyninth.png"></div>
           </th>
           <td>Solstice IPA</td>
           <td>6.8% </td>
